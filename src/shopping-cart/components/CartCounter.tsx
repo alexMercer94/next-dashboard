@@ -5,7 +5,7 @@ interface Props {
     value?: number;
 }
 
-const CartCounter = ({ value = 0 }: Props) => {
+export const CartCounter = ({ value = 0 }: Props) => {
     const [counter, setCounter] = useState(value);
 
     return (
@@ -28,5 +28,3 @@ const CartCounter = ({ value = 0 }: Props) => {
         </>
     );
 };
-
-export default CartCounter;
